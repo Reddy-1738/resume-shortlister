@@ -4,13 +4,13 @@ def extract_text(pdf_path):
     pdf = fitz.open(pdf_path)
     extracted_text = ""  
 
-    for i, page in enumerate(pdf, start=1):
-        extracted_text += f"Page {i}\n"
+    for page in pdf:
         blocks = page.get_text("blocks")
         blocks.sort(key=lambda b: (b[1], b[0]))  
 
         for block in blocks:
-            extracted_text += block[4] + "\n----\n"  
+           print(block[5])
+           print("----")
 
     return extracted_text  
 
