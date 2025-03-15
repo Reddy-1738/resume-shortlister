@@ -9,10 +9,11 @@ def extract_text(pdf_path):
         blocks.sort(key=lambda b: (b[1], b[0]))  
 
         for block in blocks:
-           print(block[1])
-           print("----")
+            print(block[4])  
+            print("----")
+          
 
-    return extracted_text  
+    
 
 pdf_path = "My cv.pdf"  
 text = extract_text(pdf_path)
