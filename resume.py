@@ -9,7 +9,7 @@ def extract_text(pdf_path):
         blocks.sort(key=lambda b: (b[1], b[0]))  
 
         for block in blocks:
-           print(block[5])
+           print(block[1])
            print("----")
 
     return extracted_text  
