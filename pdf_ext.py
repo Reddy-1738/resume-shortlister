@@ -15,6 +15,6 @@ def extract_text(pdf_path):
 
     
 
-pdf_path = "My cv.pdf"  
+pdf_path = "Resumes\My resume.pdf"  
 text = extract_text(pdf_path)
 print(text)  
