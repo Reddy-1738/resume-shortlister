@@ -10,5 +10,5 @@ def extract_txt_from_docx(path):
   ext_txt="\n".join(txt).strip() 
   return ext_txt
 
-doc_path="PUNITH.docx"
+doc_path="Resumes\PUNITH.docx"
 print(extract_txt_from_docx(doc_path))
